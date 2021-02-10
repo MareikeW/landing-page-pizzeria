@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #000000;
+}
+
+h1,
+h2,
+h3,
+.logo,
+.kontakt-container {
+    font-family: 'IM Fell English', serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 1em;
+}
+
+.menu-list {
+    display: none;
+    width: 250px;
+    background-color: #000000;
+}
+
+.menu-item {
+    padding: 1.2em;
+    text-transform: uppercase;
+    z-index: 1;
+    display: block;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+    color:darksalmon;
+    cursor: pointer;
+    outline: none;
+}
+
+.logo {
+    font-size: 3em;
+}
+
+.header-phone {
+    position: absolute;
+    right: 1em;
+    top: 1.2em;
+    font-size: 1.5em;
+}
+
+/* Section Banner */
+.banner-container {
+    background-image: url("./images/pizza_header_klein.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+    padding: 1em;
+}
+
+.banner-text {
+    color: #FFFFFF;
+    font-size: 1.9em;
+    width: 190px;
+    position: absolute;
+    right: 1em;
+    margin-bottom: 2em;
+}
+
+.banner-text h4 {
+    font-size: .7em;
+}
+
+.banner-button {
+    background-color:crimson;
+    border: none;
+    padding: 1em;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-top: 2em;
+    color: #FFFFFF;
+}
+
+.banner-button:hover,
+.banner-button:focus {
+    cursor: pointer;
+    color: salmon;
+}
+
+@media (min-width: 560px) {
+    .banner-text {
+        width: 250px;
+    }
+}
+
+@media (min-width: 650px) {
+    .banner-text {
+        width: 300px;
+    }
+}
+
+@media (min-width: 800px) {
+    .banner-container {
+        background-image: url("./images/pizza_header.jpg");
+    }
+
+    .banner-text {
+        width: 400px;
+        margin-right: 1em;
+    }
+}
+
+@media (min-width: 1100px) {
+    .banner-container {
+        background-image: url("./images/pizza_header_groß.jpg");
+        background-size: contain;
+    }
+
+    .banner-text {
+        width: 600px;  
+    }
+}
+
+@media (min-width: 1300px) {
+    .banner-text {
+        margin-right: 5em;
+        width: 800px;
+    }
+}
+
+/* Section Info */
+.info-container {
+    background-image: url("./images/restaurant_innen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1em;
+    background-color:maroon;
+    background-blend-mode: darken;
+}
+
+.info-text {
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+
+.info-heading {
+    font-size: 2em;
+}
+
+.info-lieferservice {
+    font-size: 1.3em;
+    font-weight: 800;
+    margin-top: 1em;
+}
+
+@media (min-width: 600px) {
+    .info-container {
+        padding: 2em;
+    }
+}
+
+@media (min-width: 800px) {
+    .info-container {
+        padding: 4em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .info-container {
+        padding: 4em;
+    }
+
+    .info-text {
+        padding-left: 5em;
+        padding-right: 14em;
+    }
+}
+
+/* Kontakt */
+.kontakt-container {
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3em;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF
+}
+
+.kontakt-heading {
+    font-size: 2.2em;
+}
+
+.kontakt-phone {
+    color: crimson;
+    font-size: 1.5em;
+}
+
+@media (min-width: 600px) {
+    .kontakt-container {
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 800px) {
+    .kontakt-container {
+        width: 800px;
+        padding: 3em;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #FFFFFF;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    text-transform: uppercase;
+}
+
+.footer-menu li:hover,
+.footer-menu li:focus {
+    cursor: pointer;
+    color: salmon;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding: 0.5em;
+}
+
+@media (min-width: 600px) {
+    .footer-menu {
+        width: 500px;
+        margin: 0 auto;
+    }
+}

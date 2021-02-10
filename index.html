@@ -4,45 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Pizzeria</title>
 </head>
 <body>
     <header>
-        <div>Pizzeria Sole</div>
+        <div class="logo">Pizzeria del Sole</div>
         <nav>
-            <ul>
-                <li>Speisekarte</li>
-                <li>Über uns</li>
-                <li>Kontakt</li>
+            <ul class="menu-list">
+                <li class="menu-item">Speisekarte</li>
+                <li class="menu-item">Über uns</li>
+                <li class="menu-item">Kontakt</li>
             </ul>
-            <h3>01234 4678</h3>
+            <h3 class="header-phone">01234 5678</h3>
         </nav>
     </header>
     <main>
-        <section class="banner-container">
-            <h1>Die beste Pizzeria in Göttingen</h1>
-            <h4>Wir verarbeiten ausschließlich frische, ausgesuchte und hochwertige Zutaten!</h4>
-            <button>Weitere Informationen</button>
+        <section class="banner-container" id="banner">
+            <div class="banner-text">
+                <h1>Die beste Pizzeria Göttingens</h1>
+                <h4>Wir verarbeiten ausschließlich frische, ausgesuchte und hochwertige Zutaten!</h4>
+                <button class="banner-button"><a href="#info">Weitere Informationen</a></button>
+            </div>
         </section>
 
-        <section class="info-container">
-            <h2>Pizzeria Sole</h2>
-            <p> Liebe Gäste,
-                <br>
-                wir verarbeiten ausschließlich frische, ausgesuchte und hochwertige Zutaten!
-                Alle unsere Mitarbeiter sind in ihrem Fach ausgebildet und überzeugen durch eine lange Erfahrung und ihre Leidenschaft.
-                <br>
-                Die von uns angebotenen Pizzen werden nach alter Tradition hergestellt, aber auch neu von uns interpretiert.
-            </p>
-            <h4>Selbstverständlich bieten wir auch einen Lieferservice an!</h4>
+        <section class="info-container" id="info">
+            <div class="info-text">
+                <h2 class="info-heading">Pizzeria del Sole</h2>
+                <p> Liebe Gäste,
+                    <br>
+                    wir verarbeiten ausschließlich frische, ausgesuchte und hochwertige Zutaten!
+                    Alle unsere Mitarbeiter sind in ihrem Fach ausgebildet und überzeugen durch eine lange Erfahrung und ihre Leidenschaft.
+                    <br>
+                    Die von uns angebotenen Pizzen werden nach alter Tradition hergestellt, aber auch neu von uns interpretiert.
+                </p>
+                <p class="info-lieferservice">Selbstverständlich bieten wir auch einen Lieferservice an!</p>
+            </div> 
         </section>
 
-        <section class="kontakt-container">
+        <section class="kontakt-container" id="kontakt">
             <div class="adresse">
-                <h2>Kontakt</h2>
-                <p>Pizzeria Sole</p>
-                <p><strong>01234 4678</strong></p>
+                <h2 class="kontakt-heading">Kontakt</h2>
+                <p>Pizzeria del Sole</p>
+                <p><strong class="kontakt-phone">01234 5678</strong></p>
                 <p>Hauptstraße 10</p>
                 <p>37073 Göttingen</p>
                 <p>info@pizzeria-napoli123.de</p>
@@ -62,14 +68,14 @@
         </section>
     </main>
     <footer>
-        <ul>
-            <li>Speisekart</li>
-            <li>Über uns</li>
-            <li>Kontakt</li>
-            <li>Impressum</li>
+        <ul class="footer-menu">
+            <li><a href="#banner">Speisekarte</a></li>
+            <li><a href="#info">Über uns</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a>Impressum</a></li>
         </ul>
         <hr>
-        <p>@copy; 2021 Sole  Göttingen </p>
+        <p class="footer-copyright">&copy; 2021 Sole  Göttingen </p>
     </footer>
 </body>
 </html>
