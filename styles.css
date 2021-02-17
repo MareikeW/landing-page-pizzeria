@@ -156,6 +156,8 @@ header {
 .info-text {
     color: #FFFFFF;
     font-size: 1.5em;
+    background-color: rgba(112,128,144, 0.4);
+    padding: 1em;
 }
 
 .info-heading {
