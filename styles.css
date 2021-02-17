@@ -71,6 +71,7 @@ header {
     position: relative;
     height: 500px;
     padding: 1em;
+    background-color: rgba(64,64,64, 0.39);
 }
 
 .banner-text {
